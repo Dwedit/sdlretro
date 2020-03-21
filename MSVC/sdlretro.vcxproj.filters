@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\drivers">
+      <UniqueIdentifier>{20576e62-118c-435b-9f53-3144006eaa8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{407b88f2-e734-4aa4-a41f-0df576d2e1d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libretro">
+      <UniqueIdentifier>{1d3c408e-044c-4036-8281-763d4f5832e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\common">
+      <UniqueIdentifier>{8b57c6e5-1fba-4d29-b4ac-b1ecf46bd0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\sdl1">
+      <UniqueIdentifier>{77ea6716-e96d-4ac9-84e5-697682a50aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\common\external">
+      <UniqueIdentifier>{c402b061-0453-4d57-9e18-89b4dc8eb641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\common\include">
+      <UniqueIdentifier>{0b1ed6af-397f-4255-b498-5b1c812493d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\sdl1\include">
+      <UniqueIdentifier>{f43ce478-1fc1-4705-ae41-eaf20b4e3579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\common">
+      <UniqueIdentifier>{088324f5-9d28-43b0-812c-1df6066363f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\common\include">
+      <UniqueIdentifier>{53b4c4c2-5c89-475f-af2a-e6247f205916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\sdl1">
+      <UniqueIdentifier>{0a4f3ca9-d61c-44e6-b8b5-b091c8f81041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\sdl1\include">
+      <UniqueIdentifier>{57fd948e-2b72-4fdd-afc0-886b2f9c1545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libretro\external">
+      <UniqueIdentifier>{04df24fd-9a27-481c-83a5-152957ad6483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libretro\include">
+      <UniqueIdentifier>{426e92c7-dcf8-4e04-800a-74474e1c731a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compat">
+      <UniqueIdentifier>{19df6bac-198a-4145-ad0d-7089360a5383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\common\external\stb">
+      <UniqueIdentifier>{079b95db-88bb-4499-bfe5-0946a106c9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drivers\common\external\libsamplerate">
+      <UniqueIdentifier>{821e32a6-a23f-4d25-ba8f-faff5e2d225d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\miniz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\ttf_font.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\buffered_audio.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\driver_base.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\input_base.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\logger.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\throttle.cpp">
+      <Filter>Source Files\drivers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_font.cpp">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_impl.cpp">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_input.cpp">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_video.cpp">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_audio.cpp">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\common\menu_base.cpp">
+      <Filter>Source Files\gui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\sdl1\ui_menu.cpp">
+      <Filter>Source Files\gui\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\sdl1\sdl1_menu.cpp">
+      <Filter>Source Files\gui\sdl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\util.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\variables.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\cfg.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\core.c">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\core_manager.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\clock_gettime.cpp">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\compat_posix_string.c">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\compat_strl.c">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\usleep.cpp">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\samplerate.c">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_linear.c">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_sinc.c">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_zoh.c">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\vfs_win32.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libretro\vfs_unix.cpp">
+      <Filter>Source Files\libretro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\drivers\common\external\stb\stb.c">
+      <Filter>Source Files\drivers\common\external\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_vblank.cpp">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\miniz.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\version.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\throttle.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\ttf_font.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\video_base.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\buffered_audio.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\circular_buffer.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\driver_base.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\input_base.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\include\logger.h">
+      <Filter>Source Files\drivers\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\sdl1\sdl1_font.h">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\sdl1\sdl1_audio.h">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_input.h">
+      <Filter>Source Files\drivers\sdl1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_video.h">
+      <Filter>Source Files\drivers\sdl1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_impl.h">
+      <Filter>Source Files\drivers\sdl1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gui\common\include\menu_base.h">
+      <Filter>Source Files\gui\common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gui\sdl1\include\ui_menu.h">
+      <Filter>Source Files\gui\sdl1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gui\sdl1\include\sdl1_menu.h">
+      <Filter>Source Files\gui\sdl1\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\external\json.hpp">
+      <Filter>Source Files\libretro\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\core_manager.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\libretro.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\util.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\variables.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\cfg.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libretro\include\core.h">
+      <Filter>Source Files\libretro\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\compat\unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\msvc.h">
+      <Filter>Source Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\posix_string.h">
+      <Filter>Source Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\retro_common_api.h">
+      <Filter>Source Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\strl.h">
+      <Filter>Source Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\unistd.h">
+      <Filter>Source Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\stb_rect_pack.h">
+      <Filter>Source Files\drivers\common\external\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\common.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\fastest_coeffs.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\high_qual_coeffs.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\mid_qual_coeffs.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\samplerate.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\src_config.h">
+      <Filter>Source Files\drivers\common\external\libsamplerate</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\drivers\sdl1\bmfont.inl">
+      <Filter>Source Files\drivers\sdl1</Filter>
+    </None>
+  </ItemGroup>
+</Project>

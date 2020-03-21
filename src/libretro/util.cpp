@@ -8,6 +8,11 @@
 #include <sys/stat.h>
 #endif
 
+#ifndef CLOCK_MONOTONIC
+int clock_gettime(int X, struct timespec* tv);
+#define CLOCK_MONOTONIC 0
+#endif
+
 uint64_t get_ticks_usec() {
 #ifndef CLOCK_MONOTONIC_COARSE
 #define CLOCK_MONOTONIC_COARSE CLOCK_MONOTONIC

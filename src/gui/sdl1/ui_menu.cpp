@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "ui_menu.h"
 
 #include "cfg.h"

@@ -373,10 +373,10 @@ src_get_description (int converter_type)
 	return NULL ;
 } /* src_get_description */
 
-const char *
-src_get_version (void)
-{	return PACKAGE "-" VERSION " (c) 2002-2008 Erik de Castro Lopo" ;
-} /* src_get_version */
+//const char *
+//src_get_version (void)
+//{	return PACKAGE "-" VERSION " (c) 2002-2008 Erik de Castro Lopo" ;
+//} /* src_get_version */
 
 int
 src_is_valid_ratio (double ratio)
