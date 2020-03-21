@@ -1,7 +1,12 @@
-#include <windows.h>
+#include <chrono>
+#include <thread>`
+void usleep(unsigned int usec)
+{
+	std::this_thread::sleep_for(std::chrono::microseconds(usec));
+}
 
-//#include <chrono>
-//#include <thread>`
+#if 0
+#include <windows.h>
 
 HANDLE hTimer = INVALID_HANDLE_VALUE;
 
@@ -21,3 +26,4 @@ void usleep(unsigned int usec)
 	
 	//std::this_thread::sleep_for(std::chrono::microseconds(usec));
 }
+#endif
