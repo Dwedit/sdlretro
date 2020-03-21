@@ -55,7 +55,7 @@ clock_gettime(int X, struct timespec* tv)
     }
 
     t.QuadPart -= offset.QuadPart;
-    nanoseconds = (double)t.QuadPart / frequencyToMicroseconds / 1000.0;
+    nanoseconds = (double)t.QuadPart / frequencyToMicroseconds * 1000.0;
     t.QuadPart = nanoseconds;
     tv->tv_sec = t.QuadPart / 1000000000;
     tv->tv_nsec = t.QuadPart % 1000000000;

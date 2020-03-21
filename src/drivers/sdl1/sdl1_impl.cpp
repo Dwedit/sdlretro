@@ -88,10 +88,10 @@ bool sdl1_impl::run_frame(std::function<void()> &in_game_menu_cb, bool check) {
         frame_throttle->reset(fps);
         menu_button_pressed = false;
     }
-#if _WIN32
-    win32_wait_vblank();
-    return true;
-#endif
+//#if _WIN32
+//    win32_wait_vblank();
+//    return true;
+//#endif
 
     if (check) {
         int64_t usecs = 0;
