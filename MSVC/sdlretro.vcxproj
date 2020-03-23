@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\drivers\common\buffered_audio.cpp" />
+    <ClCompile Include="..\src\drivers\common\driver_base.cpp" />
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\samplerate.c" />
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_linear.c" />
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_sinc.c" />
+    <ClCompile Include="..\src\drivers\common\external\libsamplerate\src_zoh.c" />
+    <ClCompile Include="..\src\drivers\common\external\stb\stb.c" />
+    <ClCompile Include="..\src\drivers\common\input_base.cpp" />
+    <ClCompile Include="..\src\drivers\common\logger.cpp" />
+    <ClCompile Include="..\src\drivers\common\throttle.cpp" />
+    <ClCompile Include="..\src\drivers\common\ttf_font.cpp" />
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_audio.cpp" />
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_font.cpp" />
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_impl.cpp" />
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_input.cpp" />
+    <ClCompile Include="..\src\drivers\sdl1\sdl1_video.cpp" />
+    <ClCompile Include="..\src\gui\common\menu_base.cpp" />
+    <ClCompile Include="..\src\gui\sdl1\sdl1_menu.cpp" />
+    <ClCompile Include="..\src\gui\sdl1\ui_menu.cpp" />
+    <ClCompile Include="..\src\libretro\cfg.cpp" />
+    <ClCompile Include="..\src\libretro\core.c" />
+    <ClCompile Include="..\src\libretro\core_manager.cpp" />
+    <ClCompile Include="..\src\libretro\util.cpp" />
+    <ClCompile Include="..\src\libretro\variables.cpp" />
+    <ClCompile Include="..\src\libretro\vfs_unix.cpp" />
+    <ClCompile Include="..\src\libretro\vfs_win32.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\miniz.c" />
+    <ClCompile Include="compat\compat_string.cpp" />
+    <ClCompile Include="compat\compat_time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\compat\unistd.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\common.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\fastest_coeffs.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\high_qual_coeffs.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\mid_qual_coeffs.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\samplerate.h" />
+    <ClInclude Include="..\src\drivers\common\external\libsamplerate\src_config.h" />
+    <ClInclude Include="..\src\drivers\common\external\stb_rect_pack.h" />
+    <ClInclude Include="..\src\drivers\common\include\buffered_audio.h" />
+    <ClInclude Include="..\src\drivers\common\include\circular_buffer.h" />
+    <ClInclude Include="..\src\drivers\common\include\driver_base.h" />
+    <ClInclude Include="..\src\drivers\common\include\input_base.h" />
+    <ClInclude Include="..\src\drivers\common\include\logger.h" />
+    <ClInclude Include="..\src\drivers\common\include\throttle.h" />
+    <ClInclude Include="..\src\drivers\common\include\ttf_font.h" />
+    <ClInclude Include="..\src\drivers\common\include\video_base.h" />
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_impl.h" />
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_input.h" />
+    <ClInclude Include="..\src\drivers\sdl1\include\sdl1_video.h" />
+    <ClInclude Include="..\src\drivers\sdl1\sdl1_audio.h" />
+    <ClInclude Include="..\src\drivers\sdl1\sdl1_font.h" />
+    <ClInclude Include="..\src\gui\common\include\menu_base.h" />
+    <ClInclude Include="..\src\gui\sdl1\include\sdl1_menu.h" />
+    <ClInclude Include="..\src\gui\sdl1\include\ui_menu.h" />
+    <ClInclude Include="..\src\libretro\external\json.hpp" />
+    <ClInclude Include="..\src\libretro\include\cfg.h" />
+    <ClInclude Include="..\src\libretro\include\core.h" />
+    <ClInclude Include="..\src\libretro\include\core_manager.h" />
+    <ClInclude Include="..\src\libretro\include\libretro.h" />
+    <ClInclude Include="..\src\libretro\include\util.h" />
+    <ClInclude Include="..\src\libretro\include\variables.h" />
+    <ClInclude Include="..\src\miniz.h" />
+    <ClInclude Include="..\src\version.h" />
+    <ClInclude Include="compat\compat_string.h" />
+    <ClInclude Include="compat\compat_time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\drivers\sdl1\bmfont.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{59CA13BA-CB85-45BB-8C5A-A66239357F9B}</ProjectGuid>
+    <RootNamespace>sdlretro</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\libs\SDL-1.2.15\include;C:\libs\freetype-2.10.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\libs\SDL-1.2.15\include;C:\libs\freetype-2.10.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\libs\SDL-1.2.15\VisualC\x64\Release;C:\libs\freetype-2.10.1\objs\x64\Release Static;C:\libs\SDL-1.2.15\VisualC\SDLmain\x64\Release_NoSTDIO;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\libs\SDL-1.2.15\include;C:\libs\freetype-2.10.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\libs\SDL-1.2.15\include;C:\libs\freetype-2.10.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\libs\SDL-1.2.15\VisualC\x64\Release;C:\libs\freetype-2.10.1\objs\x64\Release Static;C:\libs\SDL-1.2.15\VisualC\SDLmain\x64\Release_NoSTDIO;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VFS_WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\src\drivers\sdl1\include;$(ProjectDir)..\src\drivers\common\include;$(ProjectDir)..\src\gui\common\include;$(ProjectDir)..\src\gui\sdl1\include;$(ProjectDir)..\src\libretro\include;$(ProjectDir)..\src\drivers\common\external;$(ProjectDir)..\src\compat;$(ProjectDir)..\src\drivers\common\external\stb;$(ProjectDir)\compat\;$(ProjectDir);$(ProjectDir)..\src\drivers\common\external\libsamplerate;$(ProjectDir)..\src\libretro\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;SDL.lib;SDLmain.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VFS_WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\src\drivers\sdl1\include;$(ProjectDir)..\src\drivers\common\include;$(ProjectDir)..\src\gui\common\include;$(ProjectDir)..\src\gui\sdl1\include;$(ProjectDir)..\src\libretro\include;$(ProjectDir)..\src\drivers\common\external;$(ProjectDir)..\src\compat;$(ProjectDir)..\src\drivers\common\external\stb;$(ProjectDir)\compat\;$(ProjectDir);$(ProjectDir)..\src\drivers\common\external\libsamplerate;$(ProjectDir)..\src\libretro\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;SDL.lib;SDLmain.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VFS_WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\src\drivers\sdl1\include;$(ProjectDir)..\src\drivers\common\include;$(ProjectDir)..\src\gui\common\include;$(ProjectDir)..\src\gui\sdl1\include;$(ProjectDir)..\src\libretro\include;$(ProjectDir)..\src\drivers\common\external;$(ProjectDir)..\src\compat;$(ProjectDir)..\src\drivers\common\external\stb;$(ProjectDir)\compat\;$(ProjectDir);$(ProjectDir)..\src\drivers\common\external\libsamplerate;$(ProjectDir)..\src\libretro\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;SDL.lib;SDLmain.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;VFS_WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\src\drivers\sdl1\include;$(ProjectDir)..\src\drivers\common\include;$(ProjectDir)..\src\gui\common\include;$(ProjectDir)..\src\gui\sdl1\include;$(ProjectDir)..\src\libretro\include;$(ProjectDir)..\src\drivers\common\external;$(ProjectDir)..\src\compat;$(ProjectDir)..\src\drivers\common\external\stb;$(ProjectDir)\compat\;$(ProjectDir);$(ProjectDir)..\src\drivers\common\external\libsamplerate;$(ProjectDir)..\src\libretro\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;SDL.lib;SDLmain.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
