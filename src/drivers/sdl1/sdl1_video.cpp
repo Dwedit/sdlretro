@@ -7,7 +7,11 @@
 #include "util.h"
 
 #include <SDL.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#else
+#include "compat_time.h"
+#endif
 
 namespace drivers {
 

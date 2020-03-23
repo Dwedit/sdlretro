@@ -5,6 +5,10 @@
 #include <cstring>
 
 #include "dlfcn_compat.h"
+#if _MSC_VER
+#include "compat_string.h"
+//#include "posix_string.h"
+#endif
 
 namespace libretro {
 

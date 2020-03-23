@@ -8,6 +8,11 @@
 #include <cstdio>
 #include <cstring>
 
+#if _MSC_VER
+#include "compat_string.h"
+//#include "posix_string.h"
+#endif
+
 #ifdef _WIN32
 #define PATH_SEPARATOR_CHAR "\\"
 #else

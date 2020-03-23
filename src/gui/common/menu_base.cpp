@@ -6,7 +6,12 @@
 
 #include <libretro.h>
 
+#ifndef _MSC_VER
 #include <unistd.h>
+#else
+#include "compat_time.h"
+#endif
+
 
 namespace gui {
 

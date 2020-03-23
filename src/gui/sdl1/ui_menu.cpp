@@ -9,6 +9,8 @@
 #include "variables.h"
 #include "core_manager.h"
 
+#include <algorithm>
+
 namespace gui {
 
 using std::placeholders::_1;

@@ -8,6 +8,14 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#ifndef S_ISCHR
+#define S_ISCHR(mode) (((mode) & S_IFMT) == S_IFCHR)
+#endif
+
+#ifndef S_ISDIR
+#define S_ISDIR(mode) (((mode) & S_IFMT) == S_IFDIR)
+#endif
+
 struct retro_vfs_file_handle {
     char filename[MAX_PATH * 3 + 1];
     wchar_t filenamew[MAX_PATH + 1];

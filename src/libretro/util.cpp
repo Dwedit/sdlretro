@@ -8,6 +8,10 @@
 #include <sys/stat.h>
 #endif
 
+#if _MSC_VER
+#include "compat_time.h"
+#endif
+
 uint64_t get_ticks_usec() {
 #ifndef CLOCK_MONOTONIC_COARSE
 #define CLOCK_MONOTONIC_COARSE CLOCK_MONOTONIC
